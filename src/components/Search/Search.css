@@ -1,0 +1,83 @@
+.SearchUserMainContainer{
+    max-width: 350px;
+    margin: 16vh auto 0;
+    
+}
+.SearchUserFormContainer{
+    border: 1px solid #e2e2e2;
+    padding: 35px;
+    background: #ffffff;
+}
+.SearchUserFormContainer > p{
+    text-align: center;
+    background: #48e3ff45;
+    color: #0ed7f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: system-ui;
+    font-weight: 500;
+    margin: 0 0 42px;
+}
+.SearchUserFormContainer > img {
+    margin: 16px auto 25px;
+    display: block;
+}
+
+.SearchUserForm {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.SearchUserForm > input {
+    padding: 10px;
+    background: #fafafa;
+    outline: none;
+    border: 1px solid #cecccc;
+    border-radius: 2px;
+}
+
+.SearchUserForm >  a {
+    text-decoration: none;
+    font-weight: 700;
+    color:#2cf7f4;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.SearchUserForm > input[type="submit"]{
+    background: #2bfac9;
+    border: 1px solid #2bfac9;
+    color: white;
+    font: 500 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.SearchUserList{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+    max-height: 52vh;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .SearchUserMainContainer{
+        margin: unset;
+        max-width: unset;
+    }
+    .SearchUserBox{
+        height: unset;
+        
+    }
+    .SearchUserFormContainer{
+        border: 0;
+        padding: 20px;
+        background: #fafafa;
+    }
+    .SearchUserList{
+   
+        max-height: 80vh;
+     
+    }
+   
+}

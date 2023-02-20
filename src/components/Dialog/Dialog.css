@@ -1,0 +1,30 @@
+.dialogContainer{
+    display: none;
+}
+.open{
+    display: block;
+}
+.dialogBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0000007d;
+    width: 100%;
+    height: 100%;
+}
+.dialogmainBox{
+    position: absolute;
+    width: 35%;
+    height: 70vh;
+    background: white;
+    top: 80px;
+    left: 32%;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+@media screen and (max-width: 600px) {
+    .dialogmainBox{
+        width: 80%;
+        left: 35px;
+    }
+}

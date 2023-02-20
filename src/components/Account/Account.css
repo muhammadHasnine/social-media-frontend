@@ -1,0 +1,141 @@
+.headerSection{
+    display: flex;
+    background: white;
+    gap: 20px;
+    align-items: center;
+    padding: 38px 0;
+    justify-content: center;
+}
+.accountImage{
+    padding: 0 50px;
+}
+.accountImage > img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.rotate{
+    rotate: 20deg
+}
+.nameOptions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nameOptions > p{
+    font-size: 30px;
+    font-family: system-ui;
+    color: #0000008a;
+}
+.nameOptions>div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nameOptions >div >a > button {
+    background: white;
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+.following{
+    background: #1098f336;
+    border: 1px solid #e8e8e8;
+    color: #1098f3;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: 600;
+    width: 77px;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.postFollow{
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+.postFollow > button{
+    border: none;
+    background: white;
+    font-size: 15px;
+}
+.postFollow > button > span{
+    font-weight: 700;
+}
+.postFollow > p{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+.postSection{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+}
+.postSection > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.settingDialogContainer{
+    display: flex;
+    flex-direction: column;
+}
+.changePassword > button{
+    width: 100%;
+}
+.changePassword >button,
+.settingDialogContainer > button {
+    border: none;
+    height: 60px;
+    background: white;
+    border-bottom: 1px solid #c4c2c2;
+    transition: all;
+    transition-duration: 0.7s;
+    transition-timing-function: ease-in-out;
+}
+.changePassword > button:hover,
+.settingDialogContainer > button:hover{
+    background: rgba(199, 194, 194, 0.233);
+}
+.followersDialogContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.followingDialogContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.followingDialogContainer > h3{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media screen and (max-width: 600px){
+    .accountImage{
+        padding: 0 12px;
+    }
+    .accountImage > img{
+        width: 80px;
+        height: 80px;
+    }
+    .nameOptions{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .postFollow{
+        gap: 10px;
+    }
+    .postSection > p {
+        left: 25%;
+    }
+
+}

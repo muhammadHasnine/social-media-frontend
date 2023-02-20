@@ -1,0 +1,119 @@
+.postContainer{
+    width: 458px;
+    margin: 12px auto;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 8px;
+    
+}
+.postHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background: white;
+    border-radius: 8px 8px 0 0;
+}
+.postHeader > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    
+}
+.postHeader > div > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.postHeader > button {
+    border-style: none;
+    background: white;
+}
+.postHeader > button > img {
+    width: 13px;
+}
+.postHeader > div > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+.postImage > img {
+    width: 100%;
+}
+.postLike{
+    display: flex;
+    gap: 14px;
+    padding: 12px 12px 0 12px;
+    background: white;
+}
+.postLike > img {
+    width: 24px;
+}
+.postCaption{
+    padding: 0 12px 12px;
+    background: white;
+    border-radius: 0 0 8px 8px;
+}
+.postCaption >button {
+        margin: 10px 0;
+        font-weight: 500;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-style: none;
+        font-size: 15px;
+        background: none;
+    
+}
+.postCaption > p:last-child{
+    font-family: sans-serif;
+}
+.postCaption > p:last-child > span{
+    font-weight: 600;
+    margin-right: 10px;
+}
+.pcd{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.pch{
+    font-weight: 500;
+    margin-right: 6px;
+}
+
+.postComment{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #dad4d4;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.postComment > input {
+    padding: 10px;
+    background: #03a9f4;
+    color: white;
+    border-style: none;
+    outline: none;
+    
+}
+.postComment > input[type="text"]{
+    width: 100%;
+    color: rgb(34, 32, 32);
+    border-radius: 5px 0 0 5px;
+    background: white;
+}
+.likeDialogBox{
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.likeDialogBox > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .postContainer{
+        width: 100%;
+        border: unset;
+    }
+}

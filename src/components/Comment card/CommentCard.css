@@ -1,0 +1,33 @@
+.commentCard{
+    padding: 12px;
+}
+.commentCard>div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commentCard>div>img{
+    width: 20px;
+    height: 20px;
+}
+.commentCard>div>div{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.commentCard >div>div>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.commentCard >div>div>a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #383737;
+}
+.commentCard>p{
+    font-family: sans-serif;
+    color: #0a0a0a7d;
+    font-size: 13px     ;
+}

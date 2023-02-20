@@ -1,0 +1,92 @@
+   .mainContainer{
+    max-width: 350px;
+    margin: 12px auto 0;
+    
+}
+.LoginFormContainer{
+    border: 1px solid #e2e2e2;
+    padding: 35px;
+    background: #ffffff;
+}
+.LoginFormContainer > img {
+    margin: 16px auto 25px;
+    display: block;
+}
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.LoginForm > input {
+    padding: 10px;
+    background: #fafafa;
+    outline: none;
+    border: 1px solid #cecccc;
+    border-radius: 2px;
+}
+
+.LoginForm >  a {
+    text-decoration: none;
+    font-weight: 700;
+    color:#2cf7f4;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+.LoginForm > input[type="submit"]{
+    background: #2bfac9;
+    border: 1px solid #2bfac9;
+    color: white;
+    font: 500 16px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.dontHaveAccountContainer{
+    text-align: center;
+    border: 1px solid #e2e2e2;
+    padding: 24px 0;
+    font-family: sans-serif;
+    margin: 16px 0;
+    background: #ffffff;
+}
+.dontHaveAccountContainer > p > a{
+    text-decoration: none;
+    color: #2cf7f4;
+}
+.appContainer > p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+.appContainer > div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.appContainer > div > img {
+    width: 133px;
+}
+.footerContainer > p {
+    margin: 15px 0;
+    text-align: center;
+    color: #94a0ad;
+}
+@media screen and (max-width: 600px) {
+    .mainContainer{
+        margin: 0 auto 0;
+        
+    }
+    .LoginBox{
+        background: #ffffff;
+        height: 100vh;
+        
+    }
+    .LoginFormContainer{
+        border: 0;
+        padding: 20px;
+    }
+    .dontHaveAccountContainer{
+        border: 0;
+    }
+}

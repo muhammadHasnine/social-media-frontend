@@ -1,0 +1,16 @@
+.userContainer{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.userContainer > img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.userContainer > a{
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+}
